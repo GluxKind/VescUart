@@ -139,7 +139,7 @@ int VescUart::packSendPayload(uint8_t * payload, int lenPay) {
 
 	uint16_t crcPayload = crc16(payload, lenPay);
 	int count = 0;
-	uint8_t messageSend[256];
+	uint8_t messageSend[512];
 
 	if (lenPay <= 256)
 	{
